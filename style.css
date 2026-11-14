@@ -52,8 +52,8 @@ section { display: flex; flex-direction: column; gap: 12px; }
 .pub { display: grid; grid-template-columns: 200px 1fr; gap: 20px; align-items: center; padding: 14px 12px; border-radius: 6px; }
 .thumb { width: 200px; height: 130px; border-radius: 6px; overflow: hidden; background: var(--thumb-bg); }
 .thumb svg { width: 100%; height: 100%; display: block; }
-.thumb.fig { background: #ffffff; border: 1px solid var(--rule); }
-.thumb.fig img { width: 100%; height: 100%; display: block; object-fit: contain; padding: 3px; }
+.thumb.fig { height: auto; background: #ffffff; border-radius: 4px; }
+.thumb.fig img { width: 100%; height: auto; display: block; }
 .thumb.fig a { display: block; width: 100%; height: 100%; }
 .pub-body { display: flex; flex-direction: column; gap: 3px; }
 .papertitle { font-weight: 700; font-size: 15.5px; line-height: 1.35; }
@@ -80,10 +80,12 @@ section { display: flex; flex-direction: column; gap: 12px; }
   .page { padding-top: 24px; gap: 26px; }
   .intro { grid-template-columns: 1fr; justify-items: center; }
   .photo { width: 150px; height: 150px; order: -1; }
-  .pub { grid-template-columns: 1fr; gap: 10px; padding: 12px 8px; }
+  .pub { grid-template-columns: 36% 1fr; gap: 12px; padding: 12px 2px; }
   .thumb { width: 100%; height: auto; }
-  .thumb svg { height: 170px; }
-  .thumb.fig img { height: auto; max-height: 260px; }
+  .thumb svg { height: auto; }
+  .papertitle { font-size: 14.5px; }
+  .pub-body { font-size: 13.5px; line-height: 1.45; gap: 2px; }
+  .tag { font-size: 11px; margin-left: 4px; }
   .links { font-size: 14px; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
