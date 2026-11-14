@@ -81,5 +81,9 @@ section { display: flex; flex-direction: column; gap: 12px; }
   .intro { grid-template-columns: 1fr; justify-items: center; }
   .photo { width: 150px; height: 150px; order: -1; }
   .pub { grid-template-columns: 1fr; gap: 10px; padding: 12px 8px; }
+  .thumb { width: 100%; height: auto; }
+  .thumb svg { height: 170px; }
+  .thumb.fig img { height: auto; max-height: 260px; }
+  .links { font-size: 14px; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
